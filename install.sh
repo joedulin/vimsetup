@@ -22,7 +22,9 @@ mkdir -p ~/.vim
 cp ./vimfiles.tar.gz ~/.vim/
 cd ~/.vim
 tar -xzvf ./vimfiles.tar.gz
+rm -f vimfiles.tar.gz
 mv ~/.vim/.vimrc ~/
+
 
 cat << EOF
 =======================================================
