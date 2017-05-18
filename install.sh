@@ -1,12 +1,12 @@
 #!/bin/bash
 
-if [ -f ~/.vim/joerc ]; then
+if [ -e ~/.vim/joerc ]; then
 	echo "Server configured with joerc"
 fi
 
 goodinput="no"
 
-if [ -f /etc/redhad-release ]; then
+if [ -e /etc/redhat-release ]; then
 	sudo yum -y install git vim ctags	
 else
 	while [ "$goodinput" == "no" ]; do
